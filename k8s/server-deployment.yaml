@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: cygnetops/multi-server-pgfix-5-11
+          image: apkwan/multi-server-pgfix-5-11
           ports:
             - containerPort: 5000
           env:
@@ -34,4 +34,4 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: pgpassword
-                  key: POSTGRES_PASSWORD
+                  key: PGPASSWORD
