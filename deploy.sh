@@ -1,4 +1,4 @@
-docker build -t apkwan/multi-client:latest -t apkwan/multi-client:$SHA -f ./client/Dockerfile -f ./client
+docker build -t apkwan/multi-client:latest -t apkwan/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t apkwan/multi-server:latest -t apkwan/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t apkwan/multi-worker:latest -t apkwan/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
